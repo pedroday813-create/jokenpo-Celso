@@ -14,11 +14,9 @@ public class Usuario {
 
         while (true) {
             System.out.println("\nEscolha sua jogada:");
-            System.out.println("--------------------");
             System.out.println("1 - Pedra");
             System.out.println("2 - Papel");
             System.out.println("3 - Tesoura");
-            System.out.println("---------------------");
             System.out.print("Sua escolha: ");
 
             int escolhaUsuario = -1;
@@ -45,13 +43,13 @@ public class Usuario {
             System.out.println("------------------------------------");
 
             if (indiceUsuario == escolhaMaquina) {
-                System.out.println("Resultado: Deu EMPATE!");
+                System.out.println("Resultado: Deu EMPATE, mas não desista e tenta de novo :)!");
             } else if ((indiceUsuario == 0 && escolhaMaquina == 2) ||
                     (indiceUsuario == 1 && escolhaMaquina == 0) ||
                     (indiceUsuario == 2 && escolhaMaquina == 1)) {
-                System.out.println("Resultado: PARABÉNS! Você ganhou!");
+                System.out.println("Resultado: PARABÉNS! Voce ganhou, tente de novo talvez voce consiga ganhar novamente!");
             } else {
-                System.out.println("Resultado: Que pena! Você não ganhou desta vez.");
+                System.out.println("Resultado: Que pena! Você perdeu mas Deveria tentar de novo.");
             }
 
             System.out.print("\nDeseja jogar novamente? (s/n): ");
