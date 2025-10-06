@@ -10,18 +10,21 @@ public class Usuario {
 
         String[] opcoes = {"Pedra", "Papel", "Tesoura"};
 
-        System.out.println("=== Bem-vindo ao Jokenpô! ===");
+        System.out.println("---------- Bem-vindo ao Jokenpô! -------------");
 
         while (true) {
             System.out.println("\nEscolha sua jogada:");
+            System.out.println("-------------------------------");
             System.out.println("1 - Pedra");
             System.out.println("2 - Papel");
             System.out.println("3 - Tesoura");
+            System.out.println("-------------------------------");
             System.out.print("Sua escolha: ");
 
             int escolhaUsuario = -1;
             while (escolhaUsuario < 1 || escolhaUsuario > 3) {
                 String entrada = scanner.nextLine();
+
                 try {
                     escolhaUsuario = Integer.parseInt(entrada);
                     if (escolhaUsuario < 1 || escolhaUsuario > 3) {
